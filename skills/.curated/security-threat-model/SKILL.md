@@ -72,7 +72,7 @@ Deliver an actionable AppSec-grade threat model that is specific to the reposito
 - Confirm user clarifications (or explicit non-responses) are reflected.
 - Confirm assumptions and open questions are explicit.
 - Confirm that the format of the report matches closely the required output format defined in prompt template: `references/prompt-template.md`
-- Write the final Markdown to a file named `<repo-or-dir-name>-threat-model.md` (use the basename of the repo root, or the in-scope directory if you were asked to model a subpath).
+- Write the final Markdown to a file named `<repo-or-dir-name>-threat-model.md` (use the basename of the repo root, or the in-scope directory if you were asked to model a subpath). Before writing, check whether that file already exists. If it does, do not overwrite it: ask the user to choose between replacing it and a new name (for example with a `-YYYYMMDD-HHMM` suffix), and wait for the answer. If file output was not authorized at all, return the report in the conversation instead.
 
 
 ## Risk prioritization guidance (illustrative, not exhaustive)
